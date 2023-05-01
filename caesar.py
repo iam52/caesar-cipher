@@ -8,3 +8,10 @@ def encipher(p, k):
         if t == 64: t = 32
         c += chr(t)
     return c
+
+text = input("Enter the sentence to encrypt(uppercase only): ")
+shift = int(input("Enter the location you want to move in the Caesar encrypt: "))
+
+encrypt_text = encipher(text, shift)
+
+print(encrypt_text)
